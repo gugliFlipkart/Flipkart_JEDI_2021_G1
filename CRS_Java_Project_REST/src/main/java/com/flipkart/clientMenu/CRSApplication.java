@@ -1,15 +1,11 @@
 package com.flipkart.clientMenu;
 
-import com.flipkart.bean.Student;
-import com.flipkart.bean.User;
-import com.flipkart.constant.UserType;
 import com.flipkart.exception.CourseAlreadyRegisteredException;
 import com.flipkart.exception.CourseCapacityReached;
 import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
 import com.flipkart.handler.AuthenticationHandler;
 import com.flipkart.handler.StudentHandler;
-import jdk.internal.util.xml.impl.Pair;
 import org.apache.log4j.Logger;
 
 import java.util.Scanner;

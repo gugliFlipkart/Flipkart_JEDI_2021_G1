@@ -9,8 +9,7 @@ import com.flipkart.exception.CourseAlreadyRegisteredException;
 import com.flipkart.exception.CourseCapacityReached;
 import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
-import com.flipkart.handler.StudentHandler;
-import com.sun.tools.javac.util.Pair;
+
 
 import java.util.List;
 
@@ -57,10 +56,10 @@ public class StudentService implements StudentInterface {
     }
 
 
-    public Pair<Boolean, List<String>> registerCourses(Student student){
-
-        return  null;
-    }
+//    public String registerCourses(Student student){
+//
+//        return  null;
+//    }
 
 
     public boolean payFee(Student student, int mode){

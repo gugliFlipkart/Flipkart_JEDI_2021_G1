@@ -11,7 +11,7 @@
 
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>com.flipkart.restController</param-value>
+            <param-value>com</param-value>
 
         </init-param>
 

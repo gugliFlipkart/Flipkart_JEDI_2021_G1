@@ -9,7 +9,7 @@ import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
 import com.flipkart.service.StudentInterface;
 import com.flipkart.service.StudentService;
-import com.sun.tools.javac.util.Pair;
+
 
 import java.util.List;
 
@@ -35,14 +35,6 @@ public class StudentHandler {
     }
     public void dropCourse(String studentId, String courseId) throws CourseNotFoundException {
         studentServiceInterface.dropCourse(studentId,courseId);
-    }
-
-    public Pair<Boolean, List<String>> registerCourses(Student student){
-
-        studentServiceInterface.registerCourses(student);
-
-        return  null;
-
     }
 
 
