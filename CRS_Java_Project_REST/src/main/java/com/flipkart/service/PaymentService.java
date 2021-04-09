@@ -1,13 +1,9 @@
 package com.flipkart.service;
 
 import com.flipkart.bean.Notification;
-import com.flipkart.clientMenu.CRSApplication;
-import com.flipkart.constant.ModeOfPayment;
 import com.flipkart.dao.PaymentDao;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -20,7 +16,7 @@ public class PaymentService implements PaymentInterface {
     Scanner sc = new Scanner(System.in);
 
     @Override
-    public void make_payment(String studentId) {
+    public Notification make_payment(String studentId, String mode ) {
         double fee = 0.0;
         try {
             fee = registrationInterface.calculateFee(studentId);
@@ -38,13 +34,13 @@ public class PaymentService implements PaymentInterface {
 
             logger.info("Select Mode of Payment:");
 
-            int index = 1;
-            for (ModeOfPayment mode : ModeOfPayment.values()) {
-                logger.info(index + " " + mode);
-                index = index + 1;
-            }
+//            int index = 1;
+//            for (ModeOfPayment mode : ModeOfPayment.values()) {
+//                logger.info(index + " " + mode);
+//                index = index + 1;
+//            }
 
-            ModeOfPayment mode = ModeOfPayment.getModeofPayment(sc.nextInt());
+            //ModeOfPayment mode = ModeOfPayment.getModeofPayment(sc.nextInt());
 
             // Make Payment
             try {
@@ -56,8 +52,9 @@ public class PaymentService implements PaymentInterface {
 
             // Send Notification
             try {
-                Notification notification = notificationInterface.sendNotification(studentId, "Successful", fee);
+                Notification notification = notificationInterface.sendNotification(studentId, "Payment Successful", fee);
                 logger.info("Payment Notification ---->> " + notification.toString() );
+                return notification ;
             } catch (Exception e) {
 
                 logger.info(e.getMessage());
@@ -65,6 +62,8 @@ public class PaymentService implements PaymentInterface {
 
 
         }
+
+        return null;
 
     }
 
