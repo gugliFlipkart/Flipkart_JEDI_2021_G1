@@ -72,8 +72,6 @@ public class StudentDao implements StudentDaoInterface {
 
                 courseList.add(new Course(courseId,courseName,profId,courseFee));
 
-
-
             }
 
 
