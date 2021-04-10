@@ -24,6 +24,7 @@ public class StudentHandler {
 
 
     public List<Course> registerForSemester(){
+
         return studentServiceInterface.registerForSemester();
 
 
