@@ -72,6 +72,8 @@ public class StudentDao implements StudentDaoInterface {
 
                 courseList.add(new Course(courseId,courseName,profId,courseFee));
 
+                logger.info("=============htis is test logger=============================");
+
             }
 
 
