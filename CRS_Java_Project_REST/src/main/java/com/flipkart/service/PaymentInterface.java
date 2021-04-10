@@ -1,5 +1,7 @@
 package com.flipkart.service;
 
+import com.flipkart.bean.Notification;
+
 public interface PaymentInterface {
-    public void make_payment(String studentId);
+    public Notification make_payment(String studentId, String mode);
 }
