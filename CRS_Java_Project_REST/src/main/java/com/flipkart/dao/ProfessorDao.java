@@ -176,7 +176,7 @@ public class ProfessorDao implements ProfessorDaoInterface{
             throwables.printStackTrace();
         }
 
-        System.out.println("reached dao");
+        System.out.println("reached dao in addgrades");
 
 
     }
