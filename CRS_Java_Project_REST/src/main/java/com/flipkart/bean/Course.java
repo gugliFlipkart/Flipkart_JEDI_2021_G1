@@ -18,7 +18,9 @@ public class Course {
                 ", courseFee='" + courseFee + '\'' +
                 '}';
     }
+   public Course(){
 
+   }
     public Course(String courseId, String courseName, String profId, String courseFee) {
         this.courseId = courseId;
         this.courseName = courseName;
