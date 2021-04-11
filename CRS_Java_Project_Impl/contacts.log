@@ -1,0 +1,665 @@
+22:26:54,201  INFO CRSApplication,main:40 -   
+22:26:54,204  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+22:26:54,204  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+22:26:54,204  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+22:26:54,204  INFO CRSApplication,main:44 -    
+22:26:54,205  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+22:26:54,208  INFO CRSApplication,main:46 -    
+22:26:54,208  INFO CRSApplication,main:47 -  1. Login 
+22:26:54,208  INFO CRSApplication,main:48 -  2. Student Registration 
+22:26:54,208  INFO CRSApplication,main:49 -  3. Update password 
+22:26:54,208  INFO CRSApplication,main:50 -  9. Logout 
+22:26:54,208  INFO CRSApplication,main:51 -   
+22:27:06,596  INFO StudentMenu,main:40 -                                                                                                   
+22:27:06,596  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+22:27:06,596  INFO StudentMenu,main:42 -                                                                                                   
+22:27:06,596  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+22:27:06,597  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+22:27:06,598  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+22:27:06,598  INFO StudentMenu,main:46 -                                                                                                       
+22:27:06,598  INFO StudentMenu,main:47 - Enter your choice: 
+22:27:06,598  INFO StudentMenu,main:48 -                                                                                                       
+22:27:06,598  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+22:27:09,257  INFO StudentMenu,main:69 - --------------------    Fee Payment Portal     -----------------------
+22:27:09,257  INFO StudentMenu,main:40 -                                                                                                   
+22:27:09,257  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+22:27:09,258  INFO StudentMenu,main:42 -                                                                                                   
+22:27:09,258  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+22:27:09,258  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+22:27:09,258  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+22:27:09,258  INFO StudentMenu,main:46 -                                                                                                       
+22:27:09,258  INFO StudentMenu,main:47 - Enter your choice: 
+22:27:09,258  INFO StudentMenu,main:48 -                                                                                                       
+22:27:09,258  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+22:31:00,198  INFO StudentMenu,main:98 - ********** User logged out **********
+22:31:07,933  INFO CRSApplication,main:40 -   
+22:31:07,938  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+22:31:07,938  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+22:31:07,938  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+22:31:07,938  INFO CRSApplication,main:44 -    
+22:31:07,938  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+22:31:07,940  INFO CRSApplication,main:46 -    
+22:31:07,940  INFO CRSApplication,main:47 -  1. Login 
+22:31:07,941  INFO CRSApplication,main:48 -  2. Student Registration 
+22:31:07,941  INFO CRSApplication,main:49 -  3. Update password 
+22:31:07,941  INFO CRSApplication,main:50 -  9. Logout 
+22:31:07,941  INFO CRSApplication,main:51 -   
+22:31:22,175  INFO AdminMenu,main:34 - ******************** Successfully logged in ***************************
+22:31:22,175  INFO AdminMenu,main:37 -  
+22:31:22,176  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:31:22,176  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:31:22,177  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:31:22,177  INFO AdminMenu,main:41 -  
+22:31:22,177  INFO AdminMenu,main:42 - Enter your choice
+22:31:22,177  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:47:01,024  INFO AdminMenu,main:37 -  
+22:47:01,028  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:47:01,028  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:47:01,028  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:47:01,029  INFO AdminMenu,main:41 -  
+22:47:01,029  INFO AdminMenu,main:42 - Enter your choice
+22:47:01,029  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:48:02,011  INFO CRSApplication,main:40 -   
+22:48:02,017  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+22:48:02,017  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+22:48:02,017  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+22:48:02,018  INFO CRSApplication,main:44 -    
+22:48:02,018  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+22:48:02,020  INFO CRSApplication,main:46 -    
+22:48:02,020  INFO CRSApplication,main:47 -  1. Login 
+22:48:02,020  INFO CRSApplication,main:48 -  2. Student Registration 
+22:48:02,020  INFO CRSApplication,main:49 -  3. Update password 
+22:48:02,020  INFO CRSApplication,main:50 -  9. Logout 
+22:48:02,021  INFO CRSApplication,main:51 -   
+22:48:14,457  INFO AdminMenu,main:34 - ******************** Successfully logged in ***************************
+22:48:14,457  INFO AdminMenu,main:37 -  
+22:48:14,457  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:48:14,457  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:48:14,458  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:48:14,458  INFO AdminMenu,main:41 -  
+22:48:14,458  INFO AdminMenu,main:42 - Enter your choice
+22:48:14,458  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:48:17,496  INFO AdminMenu,main:37 -  
+22:48:17,497  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:48:17,497  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:48:17,497  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:48:17,497  INFO AdminMenu,main:41 -  
+22:48:17,497  INFO AdminMenu,main:42 - Enter your choice
+22:48:17,497  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:50:12,698  INFO CRSApplication,main:40 -   
+22:50:12,702  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+22:50:12,703  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+22:50:12,703  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+22:50:12,703  INFO CRSApplication,main:44 -    
+22:50:12,703  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+22:50:12,708  INFO CRSApplication,main:46 -    
+22:50:12,708  INFO CRSApplication,main:47 -  1. Login 
+22:50:12,708  INFO CRSApplication,main:48 -  2. Student Registration 
+22:50:12,708  INFO CRSApplication,main:49 -  3. Update password 
+22:50:12,708  INFO CRSApplication,main:50 -  9. Logout 
+22:50:12,709  INFO CRSApplication,main:51 -   
+22:51:06,881  INFO CRSApplication,main:40 -   
+22:51:06,884  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+22:51:06,884  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+22:51:06,884  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+22:51:06,884  INFO CRSApplication,main:44 -    
+22:51:06,884  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+22:51:06,886  INFO CRSApplication,main:46 -    
+22:51:06,887  INFO CRSApplication,main:47 -  1. Login 
+22:51:06,887  INFO CRSApplication,main:48 -  2. Student Registration 
+22:51:06,887  INFO CRSApplication,main:49 -  3. Update password 
+22:51:06,887  INFO CRSApplication,main:50 -  9. Logout 
+22:51:06,887  INFO CRSApplication,main:51 -   
+22:51:18,915  INFO AdminMenu,main:34 - ******************** Successfully logged in ***************************
+22:51:18,916  INFO AdminMenu,main:37 -  
+22:51:18,916  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:51:18,916  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:51:18,917  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:51:18,917  INFO AdminMenu,main:41 -  
+22:51:18,917  INFO AdminMenu,main:42 - Enter your choice
+22:51:18,917  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:51:39,270  INFO AdminMenu,main:37 -  
+22:51:39,270  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:51:39,271  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:51:39,271  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:51:39,271  INFO AdminMenu,main:41 -  
+22:51:39,271  INFO AdminMenu,main:42 - Enter your choice
+22:51:39,271  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:51:48,937  INFO AdminMenu,main:57 - Enter the course ID: 
+22:52:16,278  INFO AdminMenu,main:59 - Enter the course Name: 
+22:52:17,857  INFO AdminMenu,main:61 - Enter the professor ID: 
+22:52:19,668  INFO AdminMenu,main:63 - Enter the course fee: 
+22:52:23,707  INFO CRSApplication,main:101 - The following code has been added to the Course Catalogue! 
+22:52:23,707  INFO CRSApplication,main:102 - Course{courseId='ss', courseName='sss', profId='sss', courseFee='333'}
+22:52:23,707  INFO AdminMenu,main:37 -  
+22:52:23,707  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:52:23,707  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:52:23,707  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:52:23,708  INFO AdminMenu,main:41 -  
+22:52:23,708  INFO AdminMenu,main:42 - Enter your choice
+22:52:23,708  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:53:57,602  INFO AdminMenu,main:78 - Enter student ID: 
+22:54:05,691  INFO AdminMenu,main:37 -  
+22:54:05,692  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+22:54:05,692  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+22:54:05,692  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+22:54:05,692  INFO AdminMenu,main:41 -  
+22:54:05,692  INFO AdminMenu,main:42 - Enter your choice
+22:54:05,692  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+  9. Exit
+22:55:03,576  INFO AdminMenu,main:98 - ******* Logging Out! *********
+23:06:00,409  INFO CRSApplication,main:40 -   
+23:06:00,411  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:06:00,412  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:06:00,412  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:06:00,412  INFO CRSApplication,main:44 -    
+23:06:00,412  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:06:00,414  INFO CRSApplication,main:46 -    
+23:06:00,414  INFO CRSApplication,main:47 -  1. Login 
+23:06:00,414  INFO CRSApplication,main:48 -  2. Student Registration 
+23:06:00,415  INFO CRSApplication,main:49 -  3. Update password 
+23:06:00,415  INFO CRSApplication,main:50 -  9. Logout 
+23:06:00,415  INFO CRSApplication,main:51 -   
+23:06:11,732  INFO StudentMenu,main:40 -                                                                                                   
+23:06:11,732  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:06:11,732  INFO StudentMenu,main:42 -                                                                                                   
+23:06:11,732  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:06:11,733  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:06:11,733  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:06:11,733  INFO StudentMenu,main:46 -                                                                                                       
+23:06:11,733  INFO StudentMenu,main:47 - Enter your choice: 
+23:06:11,733  INFO StudentMenu,main:48 -                                                                                                       
+23:06:11,733  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:06:16,979  INFO StudentMenu,main:69 - --------------------    Fee Payment Portal     -----------------------
+23:06:16,999  INFO PaymentService,main:33 - You have not  registered for any courses yet
+23:06:16,999  INFO StudentMenu,main:40 -                                                                                                   
+23:06:17,000  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:06:17,000  INFO StudentMenu,main:42 -                                                                                                   
+23:06:17,000  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:06:17,000  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:06:17,000  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:06:17,000  INFO StudentMenu,main:46 -                                                                                                       
+23:06:17,000  INFO StudentMenu,main:47 - Enter your choice: 
+23:06:17,000  INFO StudentMenu,main:48 -                                                                                                       
+23:06:17,000  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:08:09,740  INFO StudentMenu,main:69 - --------------------    Fee Payment Portal     -----------------------
+23:08:09,747 ERROR CRSApplication,main:30 - 0
+23:08:09,748  INFO CRSApplication,main:31 - No operations allowed after connection closed.
+23:08:21,604  INFO CRSApplication,main:40 -   
+23:08:21,607  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:08:21,607  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:08:21,607  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:08:21,607  INFO CRSApplication,main:44 -    
+23:08:21,607  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:08:21,609  INFO CRSApplication,main:46 -    
+23:08:21,609  INFO CRSApplication,main:47 -  1. Login 
+23:08:21,609  INFO CRSApplication,main:48 -  2. Student Registration 
+23:08:21,610  INFO CRSApplication,main:49 -  3. Update password 
+23:08:21,610  INFO CRSApplication,main:50 -  9. Logout 
+23:08:21,610  INFO CRSApplication,main:51 -   
+23:08:33,204  INFO StudentMenu,main:40 -                                                                                                   
+23:08:33,204  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:08:33,205  INFO StudentMenu,main:42 -                                                                                                   
+23:08:33,205  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:08:33,205  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:08:33,206  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:08:33,206  INFO StudentMenu,main:46 -                                                                                                       
+23:08:33,206  INFO StudentMenu,main:47 - Enter your choice: 
+23:08:33,206  INFO StudentMenu,main:48 -                                                                                                       
+23:08:33,206  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:08:35,080  INFO StudentMenu,main:69 - --------------------    Fee Payment Portal     -----------------------
+23:08:35,096  INFO PaymentService,main:36 - Your total fee  = 1111.0
+23:08:35,096  INFO PaymentService,main:37 - continue Fee Payment
+23:08:35,096  INFO PaymentService,main:39 - Select Mode of Payment:
+23:08:35,097  INFO PaymentService,main:43 - 1 CREDIT_CARD
+23:08:35,097  INFO PaymentService,main:43 - 2 NET_BANKING
+23:08:35,097  INFO PaymentService,main:43 - 3 DEBIT_CARD
+23:09:23,719  INFO PaymentService,main:52 - <<---- Payment Done ---->> 
+23:09:23,741  INFO PaymentService,main:60 - Payment Notification ---->> Notification{transactionID='5309d6e1-f940-444b-bade-de5a62954262', studentId='S101', message='Successful', amount=1111.0}
+23:09:23,741  INFO StudentMenu,main:40 -                                                                                                   
+23:09:23,741  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:09:23,742  INFO StudentMenu,main:42 -                                                                                                   
+23:09:23,742  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:09:23,742  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:09:23,742  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:09:23,742  INFO StudentMenu,main:46 -                                                                                                       
+23:09:23,742  INFO StudentMenu,main:47 - Enter your choice: 
+23:09:23,742  INFO StudentMenu,main:48 -                                                                                                       
+23:09:23,742  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:12:27,290  INFO CRSApplication,main:40 -   
+23:12:27,294  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:12:27,294  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:12:27,294  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:12:27,294  INFO CRSApplication,main:44 -    
+23:12:27,294  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:12:27,299  INFO CRSApplication,main:46 -    
+23:12:27,300  INFO CRSApplication,main:47 -  1. Login 
+23:12:27,300  INFO CRSApplication,main:48 -  2. Student Registration 
+23:12:27,300  INFO CRSApplication,main:49 -  3. Update password 
+23:12:27,300  INFO CRSApplication,main:50 -  9. Logout 
+23:12:27,301  INFO CRSApplication,main:51 -   
+23:12:41,608  INFO StudentMenu,main:40 -                                                                                                   
+23:12:41,608  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:12:41,608  INFO StudentMenu,main:42 -                                                                                                   
+23:12:41,608  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:12:41,609  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:12:41,609  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:12:41,609  INFO StudentMenu,main:46 -                                                                                                       
+23:12:41,609  INFO StudentMenu,main:47 - Enter your choice: 
+23:12:41,609  INFO StudentMenu,main:48 -                                                                                                       
+23:12:41,609  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:12:44,525  INFO StudentMenu,main:69 - --------------------    Fee Payment Portal     -----------------------
+23:12:44,541  INFO PaymentService,main:36 - Your total fee  = 3333.0
+23:12:44,541  INFO PaymentService,main:37 - continue Fee Payment
+23:12:44,541  INFO PaymentService,main:39 - Select Mode of Payment:
+23:12:44,542  INFO PaymentService,main:43 - 1 CREDIT_CARD
+23:12:44,542  INFO PaymentService,main:43 - 2 NET_BANKING
+23:12:44,542  INFO PaymentService,main:43 - 3 DEBIT_CARD
+23:12:51,753  INFO PaymentService,main:52 - <<---- Payment Done ---->> 
+23:12:51,770  INFO PaymentService,main:60 - Payment Notification ---->> Notification{transactionID='d0cffb31-ac03-402c-9839-9a5c218118b1', studentId='S101', message='Successful', amount=3333.0}
+23:12:51,770  INFO StudentMenu,main:40 -                                                                                                   
+23:12:51,770  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:12:51,770  INFO StudentMenu,main:42 -                                                                                                   
+23:12:51,770  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:12:51,770  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:12:51,771  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:12:51,771  INFO StudentMenu,main:46 -                                                                                                       
+23:12:51,771  INFO StudentMenu,main:47 - Enter your choice: 
+23:12:51,771  INFO StudentMenu,main:48 -                                                                                                       
+23:12:51,771  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:14:46,300  INFO CRSApplication,main:40 -   
+23:14:46,302  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:14:46,302  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:14:46,302  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:14:46,302  INFO CRSApplication,main:44 -    
+23:14:46,303  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:14:46,305  INFO CRSApplication,main:46 -    
+23:14:46,305  INFO CRSApplication,main:47 -  1. Login 
+23:14:46,305  INFO CRSApplication,main:48 -  2. Student Registration 
+23:14:46,305  INFO CRSApplication,main:49 -  3. Update password 
+23:14:46,305  INFO CRSApplication,main:50 -  9. Logout 
+23:14:46,305  INFO CRSApplication,main:51 -   
+23:14:59,350  INFO StudentMenu,main:40 -                                                                                                   
+23:14:59,350  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:14:59,350  INFO StudentMenu,main:42 -                                                                                                   
+23:14:59,351  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:14:59,351  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:14:59,352  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:14:59,352  INFO StudentMenu,main:46 -                                                                                                       
+23:14:59,352  INFO StudentMenu,main:47 - Enter your choice: 
+23:14:59,352  INFO StudentMenu,main:48 -                                                                                                       
+23:14:59,352  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:15:03,276  INFO StudentMenu,main:69 - --------------------    Fee Payment Portal     -----------------------
+23:15:03,293  INFO PaymentService,main:36 - Your total fee  = 3333.0
+23:15:03,294  INFO PaymentService,main:37 - continue Fee Payment
+23:15:03,294  INFO PaymentService,main:39 - Select Mode of Payment:
+23:15:03,294  INFO PaymentService,main:43 - 1 CREDIT_CARD
+23:15:03,294  INFO PaymentService,main:43 - 2 NET_BANKING
+23:15:03,295  INFO PaymentService,main:43 - 3 DEBIT_CARD
+23:15:06,237  INFO PaymentService,main:52 - <<---- Payment Done ---->> 
+23:15:06,256  INFO PaymentService,main:60 - Payment Notification ---->> Notification{transactionID='15214897-9b82-4aac-a13b-bacfdede4ffa', studentId='S101', message='Successful', amount=3333.0}
+23:15:06,256  INFO StudentMenu,main:40 -                                                                                                   
+23:15:06,257  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:15:06,257  INFO StudentMenu,main:42 -                                                                                                   
+23:15:06,257  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:15:06,257  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:15:06,257  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:15:06,257  INFO StudentMenu,main:46 -                                                                                                       
+23:15:06,257  INFO StudentMenu,main:47 - Enter your choice: 
+23:15:06,257  INFO StudentMenu,main:48 -                                                                                                       
+23:15:06,257  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:15:38,915  INFO StudentMenu,main:85 - -------------------     Grade Card           -------------------------
+23:15:47,856  INFO StudentMenu,main:40 -                                                                                                   
+23:15:47,856  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:15:47,856  INFO StudentMenu,main:42 -                                                                                                   
+23:15:47,856  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:15:47,856  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:15:47,856  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:15:47,856  INFO StudentMenu,main:46 -                                                                                                       
+23:15:47,856  INFO StudentMenu,main:47 - Enter your choice: 
+23:15:47,856  INFO StudentMenu,main:48 -                                                                                                       
+23:15:47,856  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:17:03,640  INFO StudentMenu,main:85 - -------------------     Grade Card           -------------------------
+23:17:22,631  INFO CRSApplication,main:40 -   
+23:17:22,635  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:17:22,635  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:17:22,635  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:17:22,635  INFO CRSApplication,main:44 -    
+23:17:22,636  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:17:22,639  INFO CRSApplication,main:46 -    
+23:17:22,639  INFO CRSApplication,main:47 -  1. Login 
+23:17:22,639  INFO CRSApplication,main:48 -  2. Student Registration 
+23:17:22,639  INFO CRSApplication,main:49 -  3. Update password 
+23:17:22,639  INFO CRSApplication,main:50 -  9. Logout 
+23:17:22,640  INFO CRSApplication,main:51 -   
+23:17:35,808  INFO StudentMenu,main:40 -                                                                                                   
+23:17:35,808  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:17:35,808  INFO StudentMenu,main:42 -                                                                                                   
+23:17:35,808  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:17:35,809  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:17:35,809  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:17:35,810  INFO StudentMenu,main:46 -                                                                                                       
+23:17:35,810  INFO StudentMenu,main:47 - Enter your choice: 
+23:17:35,810  INFO StudentMenu,main:48 -                                                                                                       
+23:17:35,810  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:17:55,937  INFO StudentMenu,main:85 - -------------------     Grade Card           -------------------------
+23:17:55,947  INFO StudentMenu,main:40 -                                                                                                   
+23:17:55,947  INFO StudentMenu,main:41 - *********************************    Successfully logged in      *********************************
+23:17:55,947  INFO StudentMenu,main:42 -                                                                                                   
+23:17:55,947  INFO StudentMenu,main:43 - --------------------------------------------------------------------------------------------------
+23:17:55,948  INFO StudentMenu,main:44 - ===================================  Welcome to Student Menu    ===============================
+23:17:55,948  INFO StudentMenu,main:45 - ----------------------------------------------------------------------------------------------------
+23:17:55,948  INFO StudentMenu,main:46 -                                                                                                       
+23:17:55,948  INFO StudentMenu,main:47 - Enter your choice: 
+23:17:55,948  INFO StudentMenu,main:48 -                                                                                                       
+23:17:55,948  INFO StudentMenu,main:50 -  1. Register For Semester 
+ 2. Pay fee 
+ 3. View Grades 
+ 9.exit
+23:18:08,859  INFO StudentMenu,main:103 - ********** User logged out **********
+23:18:14,262  INFO CRSApplication,main:40 -   
+23:18:14,264  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:18:14,264  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:18:14,264  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:18:14,265  INFO CRSApplication,main:44 -    
+23:18:14,265  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:18:14,266  INFO CRSApplication,main:46 -    
+23:18:14,266  INFO CRSApplication,main:47 -  1. Login 
+23:18:14,267  INFO CRSApplication,main:48 -  2. Student Registration 
+23:18:14,267  INFO CRSApplication,main:49 -  3. Update password 
+23:18:14,267  INFO CRSApplication,main:50 -  9. Logout 
+23:18:14,267  INFO CRSApplication,main:51 -   
+23:18:49,387  INFO ProfessorMenu,main:35 -  
+23:18:49,388  INFO ProfessorMenu,main:36 - *********************************    Successfully logged in      *********************************
+23:18:49,388  INFO ProfessorMenu,main:37 -  
+23:18:49,388  INFO ProfessorMenu,main:38 - --------------------------------------------------------------------------------------------------
+23:18:49,389  INFO ProfessorMenu,main:39 - ===================================  Welcome to Professor Menu    ===============================
+23:18:49,389  INFO ProfessorMenu,main:40 - ----------------------------------------------------------------------------------------------------
+23:18:49,389  INFO ProfessorMenu,main:41 -      
+23:18:49,389  INFO ProfessorMenu,main:42 - Enter your choice: 
+23:18:49,389  INFO ProfessorMenu,main:43 -    
+23:18:49,389  INFO ProfessorMenu,main:44 - 1. Add Course to teach 
+ 2. View Enrolled Students 
+ 3. Add grades  
+ 9. Exit
+23:18:55,669  INFO ProfessorMenu,main:48 - -----You're redirected to page where you can add Courses to teach!-----
+23:18:55,669  INFO ProfessorMenu,main:49 -         
+23:18:55,669  INFO ProfessorMenu,main:50 - Enter courseId you would like to teach :
+23:18:55,669  INFO ProfessorMenu,main:53 - -----You're redirected to page where you can view list of Enrolled students!-----
+23:18:55,669  INFO ProfessorMenu,main:54 -  
+23:18:55,669  INFO ProfessorMenu,main:55 - Enter Course ID to see enrolled Student
+23:20:31,404  INFO CRSApplication,main:40 -   
+23:20:31,406  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:20:31,406  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:20:31,406  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:20:31,406  INFO CRSApplication,main:44 -    
+23:20:31,406  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:20:31,409  INFO CRSApplication,main:46 -    
+23:20:31,409  INFO CRSApplication,main:47 -  1. Login 
+23:20:31,409  INFO CRSApplication,main:48 -  2. Student Registration 
+23:20:31,410  INFO CRSApplication,main:49 -  3. Update password 
+23:20:31,410  INFO CRSApplication,main:50 -  9. Logout 
+23:20:31,410  INFO CRSApplication,main:51 -   
+23:20:41,423  INFO ProfessorMenu,main:35 -  
+23:20:41,423  INFO ProfessorMenu,main:36 - *********************************    Successfully logged in      *********************************
+23:20:41,423  INFO ProfessorMenu,main:37 -  
+23:20:41,423  INFO ProfessorMenu,main:38 - --------------------------------------------------------------------------------------------------
+23:20:41,424  INFO ProfessorMenu,main:39 - ===================================  Welcome to Professor Menu    ===============================
+23:20:41,424  INFO ProfessorMenu,main:40 - ----------------------------------------------------------------------------------------------------
+23:20:41,424  INFO ProfessorMenu,main:41 -      
+23:20:41,424  INFO ProfessorMenu,main:42 - Enter your choice: 
+23:20:41,424  INFO ProfessorMenu,main:43 -    
+23:20:41,424  INFO ProfessorMenu,main:44 - 1. Add Course to teach 
+ 2. View Enrolled Students 
+ 3. Add grades  
+ 9. Exit
+23:20:43,621  INFO ProfessorMenu,main:48 - -----You're redirected to page where you can add Courses to teach!-----
+23:20:43,621  INFO ProfessorMenu,main:49 -         
+23:20:43,621  INFO ProfessorMenu,main:50 - Enter courseId you would like to teach :
+23:20:54,122  INFO CRSApplication,main:88 - course added succesfully....
+23:20:54,122  INFO ProfessorMenu,main:55 - -----You're redirected to page where you can view list of Enrolled students!-----
+23:20:54,122  INFO ProfessorMenu,main:56 -  
+23:20:54,122  INFO ProfessorMenu,main:57 - Enter Course ID to see enrolled Student
+23:21:24,260  INFO CRSApplication,main:40 -   
+23:21:24,262  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+23:21:24,263  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+23:21:24,263  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+23:21:24,263  INFO CRSApplication,main:44 -    
+23:21:24,263  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+23:21:24,265  INFO CRSApplication,main:46 -    
+23:21:24,265  INFO CRSApplication,main:47 -  1. Login 
+23:21:24,265  INFO CRSApplication,main:48 -  2. Student Registration 
+23:21:24,265  INFO CRSApplication,main:49 -  3. Update password 
+23:21:24,265  INFO CRSApplication,main:50 -  9. Logout 
+23:21:24,265  INFO CRSApplication,main:51 -   
+23:21:36,019  INFO ProfessorMenu,main:35 -  
+23:21:36,019  INFO ProfessorMenu,main:36 - *********************************    Successfully logged in      *********************************
+23:21:36,019  INFO ProfessorMenu,main:37 -  
+23:21:36,019  INFO ProfessorMenu,main:38 - --------------------------------------------------------------------------------------------------
+23:21:36,020  INFO ProfessorMenu,main:39 - ===================================  Welcome to Professor Menu    ===============================
+23:21:36,020  INFO ProfessorMenu,main:40 - ----------------------------------------------------------------------------------------------------
+23:21:36,020  INFO ProfessorMenu,main:41 -      
+23:21:36,020  INFO ProfessorMenu,main:42 - Enter your choice: 
+23:21:36,020  INFO ProfessorMenu,main:43 -    
+23:21:36,020  INFO ProfessorMenu,main:44 - 1. Add Course to teach 
+ 2. View Enrolled Students 
+ 3. Add grades  
+ 9. Exit
+23:21:44,218  INFO ProfessorMenu,main:48 - -----You're redirected to page where you can add Courses to teach!-----
+23:21:44,218  INFO ProfessorMenu,main:49 -         
+23:21:44,218  INFO ProfessorMenu,main:50 - Enter courseId you would like to teach :
+23:21:47,059  INFO CRSApplication,main:88 - course added succesfully....
+23:21:47,059  INFO ProfessorMenu,main:35 -  
+23:21:47,059  INFO ProfessorMenu,main:36 - *********************************    Successfully logged in      *********************************
+23:21:47,059  INFO ProfessorMenu,main:37 -  
+23:21:47,059  INFO ProfessorMenu,main:38 - --------------------------------------------------------------------------------------------------
+23:21:47,059  INFO ProfessorMenu,main:39 - ===================================  Welcome to Professor Menu    ===============================
+23:21:47,059  INFO ProfessorMenu,main:40 - ----------------------------------------------------------------------------------------------------
+23:21:47,060  INFO ProfessorMenu,main:41 -      
+23:21:47,060  INFO ProfessorMenu,main:42 - Enter your choice: 
+23:21:47,060  INFO ProfessorMenu,main:43 -    
+23:21:47,060  INFO ProfessorMenu,main:44 - 1. Add Course to teach 
+ 2. View Enrolled Students 
+ 3. Add grades  
+ 9. Exit
+23:22:22,583  INFO ProfessorMenu,main:56 - -----You're redirected to page where you can view list of Enrolled students!-----
+23:22:22,584  INFO ProfessorMenu,main:57 -  
+23:22:22,584  INFO ProfessorMenu,main:58 - Enter Course ID to see enrolled Student
+23:22:26,217  INFO ProfessorMenu,main:35 -  
+23:22:26,217  INFO ProfessorMenu,main:36 - *********************************    Successfully logged in      *********************************
+23:22:26,218  INFO ProfessorMenu,main:37 -  
+23:22:26,218  INFO ProfessorMenu,main:38 - --------------------------------------------------------------------------------------------------
+23:22:26,218  INFO ProfessorMenu,main:39 - ===================================  Welcome to Professor Menu    ===============================
+23:22:26,218  INFO ProfessorMenu,main:40 - ----------------------------------------------------------------------------------------------------
+23:22:26,218  INFO ProfessorMenu,main:41 -      
+23:22:26,218  INFO ProfessorMenu,main:42 - Enter your choice: 
+23:22:26,218  INFO ProfessorMenu,main:43 -    
+23:22:26,218  INFO ProfessorMenu,main:44 - 1. Add Course to teach 
+ 2. View Enrolled Students 
+ 3. Add grades  
+ 9. Exit
+23:23:01,928  INFO ProfessorMenu,main:70 - -----You're redirected to page where you can add grades!-----
+23:23:01,928  INFO ProfessorMenu,main:71 -    
+23:23:14,873  INFO CRSApplication,main:172 - 1
+23:23:14,873  INFO ProfessorMenu,main:35 -  
+23:23:14,873  INFO ProfessorMenu,main:36 - *********************************    Successfully logged in      *********************************
+23:23:14,873  INFO ProfessorMenu,main:37 -  
+23:23:14,873  INFO ProfessorMenu,main:38 - --------------------------------------------------------------------------------------------------
+23:23:14,874  INFO ProfessorMenu,main:39 - ===================================  Welcome to Professor Menu    ===============================
+23:23:14,874  INFO ProfessorMenu,main:40 - ----------------------------------------------------------------------------------------------------
+23:23:14,874  INFO ProfessorMenu,main:41 -      
+23:23:14,874  INFO ProfessorMenu,main:42 - Enter your choice: 
+23:23:14,874  INFO ProfessorMenu,main:43 -    
+23:23:14,874  INFO ProfessorMenu,main:44 - 1. Add Course to teach 
+ 2. View Enrolled Students 
+ 3. Add grades  
+ 9. Exit
+09:21:01,614  INFO CRSApplication,main:40 -   
+09:21:01,617  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+09:21:01,618  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+09:21:01,618  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+09:21:01,618  INFO CRSApplication,main:44 -    
+09:21:01,618  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+09:21:01,620  INFO CRSApplication,main:46 -    
+09:21:01,620  INFO CRSApplication,main:47 -  1. Login 
+09:21:01,620  INFO CRSApplication,main:48 -  2. Student Registration 
+09:21:01,620  INFO CRSApplication,main:49 -  3. Update password 
+09:21:01,620  INFO CRSApplication,main:50 -  9. Logout 
+09:21:01,620  INFO CRSApplication,main:51 -   
+09:21:04,982  INFO CRSApplication,main:149 - ====enter Credentials=======
+09:21:14,967  INFO CRSApplication,main:309 - student registered -----
+09:22:26,616  INFO CRSApplication,main:40 -   
+09:22:26,618  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+09:22:26,618  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+09:22:26,618  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+09:22:26,618  INFO CRSApplication,main:44 -    
+09:22:26,619  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+09:22:26,620  INFO CRSApplication,main:46 -    
+09:22:26,621  INFO CRSApplication,main:47 -  1. Login 
+09:22:26,621  INFO CRSApplication,main:48 -  2. Student Registration 
+09:22:26,621  INFO CRSApplication,main:49 -  3. Update password 
+09:22:26,621  INFO CRSApplication,main:50 -  9. Logout 
+09:22:26,621  INFO CRSApplication,main:51 -   
+09:22:30,307  INFO CRSApplication,main:149 - ====enter Credentials=======
+09:22:50,071  INFO CRSApplication,main:309 - student registered -----
+09:27:06,073  INFO CRSApplication,main:40 -   
+09:27:06,075  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+09:27:06,075  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+09:27:06,075  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+09:27:06,076  INFO CRSApplication,main:44 -    
+09:27:06,076  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+09:27:06,078  INFO CRSApplication,main:46 -    
+09:27:06,078  INFO CRSApplication,main:47 -  1. Login 
+09:27:06,078  INFO CRSApplication,main:48 -  2. Student Registration 
+09:27:06,078  INFO CRSApplication,main:49 -  3. Update password 
+09:27:06,079  INFO CRSApplication,main:50 -  9. Logout 
+09:27:06,079  INFO CRSApplication,main:51 -   
+09:27:11,739  INFO CRSApplication,main:149 - ====enter Credentials=======
+09:27:22,389  INFO CRSApplication,main:309 - student registered -----
+09:45:35,438  INFO CRSApplication,main:40 -   
+09:45:35,441  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+09:45:35,441  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+09:45:35,441  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+09:45:35,441  INFO CRSApplication,main:44 -    
+09:45:35,442  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+09:45:35,444  INFO CRSApplication,main:46 -    
+09:45:35,444  INFO CRSApplication,main:47 -  1. Login 
+09:45:35,444  INFO CRSApplication,main:48 -  2. Student Registration 
+09:45:35,444  INFO CRSApplication,main:49 -  3. Update password 
+09:45:35,444  INFO CRSApplication,main:50 -  9. Logout 
+09:45:35,444  INFO CRSApplication,main:51 -   
+09:45:43,859  INFO CRSApplication,main:129 - ***************  Oops!  Invalid Credentials   ************** 
+09:48:49,540  INFO CRSApplication,main:40 -   
+09:48:49,542  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+09:48:49,543  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+09:48:49,543  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+09:48:49,543  INFO CRSApplication,main:44 -    
+09:48:49,543  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+09:48:49,545  INFO CRSApplication,main:46 -    
+09:48:49,545  INFO CRSApplication,main:47 -  1. Login 
+09:48:49,545  INFO CRSApplication,main:48 -  2. Student Registration 
+09:48:49,545  INFO CRSApplication,main:49 -  3. Update password 
+09:48:49,545  INFO CRSApplication,main:50 -  9. Logout 
+09:48:49,545  INFO CRSApplication,main:51 -   
+09:50:10,663  INFO AdminMenu,main:34 - ******************** Successfully logged in ***************************
+09:50:10,664  INFO AdminMenu,main:37 -  
+09:50:10,664  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+09:50:10,664  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+09:50:10,665  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+09:50:10,665  INFO AdminMenu,main:41 -  
+09:50:10,665  INFO AdminMenu,main:42 - Enter your choice
+09:50:10,665  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+ 9. Exit
+09:50:13,741  INFO AdminMenu,main:37 -  
+09:50:13,742  INFO AdminMenu,main:38 - --------------------------------------------------------------------------
+09:50:13,742  INFO AdminMenu,main:39 - ==========================Welcome to Admin Menu =========================
+09:50:13,742  INFO AdminMenu,main:40 - --------------------------------------------------------------------------
+09:50:13,742  INFO AdminMenu,main:41 -  
+09:50:13,742  INFO AdminMenu,main:42 - Enter your choice
+09:50:13,742  INFO AdminMenu,main:43 - 1. Approve Student Registration 
+ 2. Add Course in Course Catalogue 
+ 3. Delete a course from Course Catalogue 
+ 4. Generate Student Report card 
+ 9. Exit
+15:41:46,037  INFO CRSApplication,main:40 -   
+15:41:46,039  INFO CRSApplication,main:41 - -------------------------------------------------------------------------------------------------
+15:41:46,040  INFO CRSApplication,main:42 - -------------------------------  Welcome to Course Management System  ---------------------------
+15:41:46,040  INFO CRSApplication,main:43 - -------------------------------------------------------------------------------------------------
+15:41:46,040  INFO CRSApplication,main:44 -    
+15:41:46,040  INFO CRSApplication,main:45 - ======================================  Enter your choice  ======================================
+15:41:46,042  INFO CRSApplication,main:46 -    
+15:41:46,043  INFO CRSApplication,main:47 -  1. Login 
+15:41:46,043  INFO CRSApplication,main:48 -  2. Student Registration 
+15:41:46,043  INFO CRSApplication,main:49 -  3. Update password 
+15:41:46,043  INFO CRSApplication,main:50 -  9. Logout 
+15:41:46,043  INFO CRSApplication,main:51 -   
