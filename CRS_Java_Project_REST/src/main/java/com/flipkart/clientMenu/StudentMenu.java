@@ -77,7 +77,7 @@ public class StudentMenu {
 
 //                    PaymentHandler paymentHandler = new PaymentHandler();
                     PaymentHandler paymentHandler = new PaymentHandler();
-                    paymentHandler.make_payment(studentId);
+                    paymentHandler.make_payment(studentId, "netbanking");
 
                     break;
 
