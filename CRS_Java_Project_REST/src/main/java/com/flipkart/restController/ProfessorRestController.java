@@ -3,11 +3,13 @@ package com.flipkart.restController;
 import com.flipkart.bean.Grade;
 import com.flipkart.bean.Student;
 import com.flipkart.exception.CourseNotFoundException;
+import com.flipkart.exception.ProfessorAlreadyAssignedException;
 import com.flipkart.handler.ProfessorHandler;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -23,20 +25,28 @@ public class ProfessorRestController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response addCoursesToTeach(@PathParam("professorId") String professorId, @QueryParam("courseId") String courseId) {
 
-        professorHandler.addCoursesToTeach(professorId,courseId);
-        return Response.status(201).entity( "Course Added Successfully").build();
+        try {
+            professorHandler.addCoursesToTeach(professorId, courseId);
+            return Response.status(201).entity("Course Added Successfully").build();
+        } catch (Exception e) {
+            return Response.status(501).entity(e.getMessage()).build();
+        }
 
     }
 
     @POST
     @Path("/viewstudents/{courseId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response viewStudents(@PathParam("courseId") String courseId) throws CourseNotFoundException {
-        List<Student> courseStudentList = professorHandler.ViewStudents(courseId);
-        if(courseStudentList.size() == 0)
-            throw new CourseNotFoundException(courseId);
-        return Response.status(201).entity( courseStudentList ).build();
-        //if courseStudentlist size = 0 raise exception
+    public Response viewStudents(@PathParam("courseId") String courseId)  {
+
+
+        List<Student> courseStudentList = null;
+        try {
+            courseStudentList = professorHandler.ViewStudents(courseId);
+            return Response.status(201).entity( courseStudentList ).build();
+        } catch (Exception e) {
+            return Response.status(501).entity(e.getMessage()).build();
+        }
 
 
     }
@@ -47,8 +57,13 @@ public class ProfessorRestController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response addGrades(Grade grade) {
 
-        professorHandler.addGrades(grade);
-        return Response.status(201).entity( "Grades Added Successfully").build();
+        try {
+            professorHandler.addGrades(grade);
+            return Response.status(201).entity( "Grades Added Successfully").build();
+        } catch (Exception e) {
+            return Response.status(501).entity(e.getMessage()).build();
+        }
+
 
     }
 
