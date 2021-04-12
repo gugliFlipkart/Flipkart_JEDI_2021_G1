@@ -11,6 +11,7 @@ import com.flipkart.service.StudentInterface;
 import com.flipkart.service.StudentService;
 
 
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -53,7 +54,7 @@ public class StudentHandler {
 //        return null;
     }
 
-    public void studentRegistration(String studentId, String password){
+    public void studentRegistration(String studentId, String password) throws SQLException {
 
         studentServiceInterface.studentRegistration(studentId, password);
 

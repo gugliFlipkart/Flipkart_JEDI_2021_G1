@@ -9,6 +9,7 @@ import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
 
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -23,6 +24,6 @@ public interface StudentInterface {
     public void addCourse(String student, String courseId) throws CourseAlreadyRegisteredException, RequiredCourseAdditionException, CourseCapacityReached;
     public void dropCourse(String student, String courseId) throws CourseNotFoundException;
     public boolean payFee(Student student, int mode);
-    public void studentRegistration(String userId, String password);
+    public void studentRegistration(String userId, String password) throws SQLException;
 
 }

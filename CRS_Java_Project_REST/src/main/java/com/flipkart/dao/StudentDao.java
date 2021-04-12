@@ -292,7 +292,7 @@ public class StudentDao implements StudentDaoInterface {
 
     }
 
-    public void studentRegistration(String studentId, String password){
+    public void studentRegistration(String studentId, String password) throws SQLException {
 
         try {
 
@@ -310,7 +310,9 @@ public class StudentDao implements StudentDaoInterface {
 
 
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            logger.debug("db err");
+            throw throwables;
+
         }
 
 

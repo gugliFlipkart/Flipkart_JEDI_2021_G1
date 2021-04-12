@@ -152,7 +152,7 @@ public class CRSApplication {
         password = scanner.nextLine();
 
         StudentHandler studentHandler = new StudentHandler();
-        studentHandler.studentRegistration(userId,password);
+//        studentHandler.studentRegistration(userId,password);
 
 
 
