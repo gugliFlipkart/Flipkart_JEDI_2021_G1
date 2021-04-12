@@ -5,9 +5,7 @@ import com.flipkart.bean.Grade;
 import com.flipkart.bean.Student;
 import com.flipkart.clientMenu.CRSApplication;
 import com.flipkart.constant.SqlQueries;
-import com.flipkart.exception.CourseAlreadyPresentInCatalogueException;
-import com.flipkart.exception.CourseNotFoundException;
-import com.flipkart.exception.ProfessorAlreadyAssignedException;
+import com.flipkart.exception.*;
 import com.flipkart.utils.DBUtils;
 import org.apache.log4j.Logger;
 
@@ -75,7 +73,7 @@ public class AdminDao implements AdminDaoInterface{
      * @param course
      */
     @Override
-    public void addCourses(Course course) {
+    public void addCourses(Course course) throws CourseAlreadyPresentInCatalogueException, SQLException {
 
         int checkIfCourseAlreadyAdded = 0;
        try {
@@ -103,12 +101,12 @@ public class AdminDao implements AdminDaoInterface{
 
 
                } catch (SQLException throwables) {
-                   throwables.printStackTrace();
+                   throw throwables;
                }
            }
        }
        catch (Exception ex) {
-           ex.printStackTrace();
+           throw ex;
        }
 
 
@@ -121,7 +119,7 @@ public class AdminDao implements AdminDaoInterface{
      */
 
     @Override
-    public void dropCourses(String courseId) {
+    public void dropCourses(String courseId) throws CourseNotFoundException, SQLException {
 
 
         int checkIfCoursePresent = 1;
@@ -150,11 +148,9 @@ public class AdminDao implements AdminDaoInterface{
             } else {
                 throw new CourseNotFoundException(courseId);
             }
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (CourseNotFoundException e) {
-            e.printStackTrace();
+        }
+         catch (SQLException throwables) {
+            throw throwables;
         }
     }
 
@@ -165,7 +161,7 @@ public class AdminDao implements AdminDaoInterface{
      */
 
         @Override
-    public List<Grade> generateReportCard(String studentId) {
+    public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException {
 
 
 
@@ -178,28 +174,30 @@ public class AdminDao implements AdminDaoInterface{
                 stmt.setString(1, studentId);
                 ResultSet rs = stmt.executeQuery();
 
+                if (!rs.next())
+                    throw new StudentIDNotValidException();
+                else {
+                    while (rs.next()) {
+                        String courseId = rs.getString("courseId");
+                        String courseName = rs.getString("courseName");
+                        String gradeObtained = rs.getString("grade");
 
-                while (rs.next()) {
-                    String courseId = rs.getString("courseId");
-                    String courseName = rs.getString("courseName");
-                    String gradeObtained = rs.getString("grade");
+                        Grade grade = new Grade();
+                        grade.setCourseId(courseId);
+                        grade.setCourseName(courseName);
+                        grade.setGradeObtained(gradeObtained);
 
-                    Grade grade = new Grade();
-                    grade.setCourseId(courseId);
-                    grade.setCourseName(courseName);
-                    grade.setGradeObtained(gradeObtained);
+                        gradeList.add(grade);
 
-                    gradeList.add(grade);
 
+                    }
+                }
+                } catch(SQLException throwables){
+                    throw throwables;
 
                 }
 
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-
-            }
-
-            return gradeList;
+                return gradeList;
 
         }
 

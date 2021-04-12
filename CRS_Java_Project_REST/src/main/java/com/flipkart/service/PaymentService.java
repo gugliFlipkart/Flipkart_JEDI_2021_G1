@@ -15,14 +15,22 @@ public class PaymentService implements PaymentInterface {
     PaymentDao paymentDao = new PaymentDao();
     Scanner sc = new Scanner(System.in);
 
+    /**
+     *
+     * @param studentId
+     * @param mode
+     * @return
+     */
     @Override
-    public Notification make_payment(String studentId, String mode ) {
+    public Notification make_payment(String studentId, String mode ) throws SQLException, ClassNotFoundException {
         double fee = 0.0;
         try {
             fee = registrationInterface.calculateFee(studentId);
         } catch (SQLException e) {
 
+
             logger.info(e.getMessage());
+            throw e;
         }
 
         if (fee == 0.0) {
@@ -48,6 +56,7 @@ public class PaymentService implements PaymentInterface {
                 logger.info("<<---- Payment Done ---->> " );
             } catch (Exception e) {
                 logger.info(e.getMessage());
+                throw e;
             }
 
             // Send Notification
@@ -58,6 +67,7 @@ public class PaymentService implements PaymentInterface {
             } catch (Exception e) {
 
                 logger.info(e.getMessage());
+                throw e;
             }
 
 

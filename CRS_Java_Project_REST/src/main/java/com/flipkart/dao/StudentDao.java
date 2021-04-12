@@ -202,7 +202,7 @@ public class StudentDao implements StudentDaoInterface {
             coursePresent = rs.getInt(1);
 
             if( coursePresent == 0) {
-
+                logger.info("course not found in dao");
                 throw new CourseNotFoundException(courseId);
 
             }

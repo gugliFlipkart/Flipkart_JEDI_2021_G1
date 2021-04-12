@@ -3,7 +3,11 @@ package com.flipkart.service;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Grade;
 import com.flipkart.bean.Student;
+import com.flipkart.exception.CourseAlreadyPresentInCatalogueException;
+import com.flipkart.exception.CourseNotFoundException;
+import com.flipkart.exception.StudentIDNotValidException;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -15,7 +19,7 @@ public interface AdminServiceInterface {
 
    // public List<Student> viewApprovalPendingregistration();
     public void approveStudentRegistration();
-    public void addCourses(Course course);
-    public void dropCourses(String courseId);
-    public List<Grade> generateReportCard(String studentId);
+    public void addCourses(Course course) throws CourseAlreadyPresentInCatalogueException, SQLException;
+    public void dropCourses(String courseId) throws CourseNotFoundException, SQLException;
+    public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException;
 }

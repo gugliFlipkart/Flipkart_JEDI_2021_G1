@@ -4,12 +4,17 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.Grade;
 import com.flipkart.bean.Notification;
 
+import com.flipkart.exception.CourseAlreadyRegisteredException;
+import com.flipkart.exception.CourseCapacityReached;
+import com.flipkart.exception.CourseNotFoundException;
+import com.flipkart.exception.RequiredCourseAdditionException;
 import com.flipkart.handler.PaymentHandler;
 import com.flipkart.handler.StudentHandler;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -31,33 +36,46 @@ public class StudentRestController {
 
     }
 
-    /*
+
+
     @POST
-    @Path("/getFeeDetails/{studentId}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getFeeDetails(@PathParam("studentId") String studentId) {
-        System.out.println("hit payFee service ===== ");
-        PaymentHandler paymentHandler = new PaymentHandler();
-//        paymentHandler.make_payment(studentId);
-        return "paymetn done";
+    @Path("/addCourse/{studentId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response addCourse(@PathParam("studentId") String studentId, @QueryParam("courseId") String courseIdAdd) {
+
+        try{
+            studentHandler.addCourse(studentId,courseIdAdd);
+            return Response.status(201).entity( "course added" ).build();
+
+        } catch (RequiredCourseAdditionException e) {
+            return Response.status(201).entity( e.getMessage() ).build();
+        } catch (CourseAlreadyRegisteredException e) {
+            return Response.status(201).entity( e.getMessage() ).build();
+        } catch (CourseCapacityReached e) {
+            return Response.status(201).entity( e.getMessage() ).build();
+        }
 
 
     }
 
+
+
     @POST
-    @Path("/payFee/{studentId}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String payFee(@PathParam("studentId") String studentId) {
-        System.out.println("hit payFee service ===== ");
-        PaymentHandler paymentHandler = new PaymentHandler();
-//        paymentHandler.make_payment(studentId);
-        return "paymetn done";
+    @Path("/dropCourse/{studentId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response dropCourse(@PathParam("studentId") String studentId, @QueryParam("courseId") String courseIdDrop) {
+
+        try{
+            System.out.println("in drop=====");
+            studentHandler.dropCourse(studentId,courseIdDrop);
+            return Response.status(201).entity( "course dropped" ).build();
+
+        } catch (CourseNotFoundException e) {
+            return Response.status(502).entity( e.getMessage() ).build();
+        }
 
 
     }
-
-    */
-
 
 
 
@@ -66,18 +84,28 @@ public class StudentRestController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response payFee(@PathParam("studentId") String studentId, @QueryParam("mode") String mode) {
 
-        Notification notification = paymentHandler.make_payment(studentId, mode);
+        try {
+            Notification notification = paymentHandler.make_payment(studentId, mode);
 
-        return Response.status(201).entity( notification ).build();
+            return Response.status(201).entity( notification ).build();
+        } catch (SQLException throwables) {
+            return Response.status(501).entity( throwables.getMessage() ).build();
+        } catch (ClassNotFoundException e) {
+            return Response.status(501).entity( e.getMessage() ).build();
+        }
+
     }
+
+
 
     @POST
     @Path("/viewGradeCard/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Grade> viewGradeCard(@PathParam("studentId") String studentId) {
+    public Response viewGradeCard(@PathParam("studentId") String studentId) {
         System.out.println("hit viewReportCard service ===== ");
 
-        return studentHandler.viewReportCard(studentId);
+        List<Grade> studentGradeList = studentHandler.viewReportCard(studentId);
+        return Response.status(201).entity( studentGradeList).build();
 
 
 
