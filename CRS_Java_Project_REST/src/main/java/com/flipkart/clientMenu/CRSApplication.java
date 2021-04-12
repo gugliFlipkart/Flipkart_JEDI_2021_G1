@@ -110,11 +110,11 @@ public class CRSApplication {
 
                         break;
                     case "ADMIN":
-
-                        AdminMenu adminMenu = new AdminMenu();
-
-                        adminMenu.enterAdminDashboard();
-                        break;
+//
+//                        AdminMenu adminMenu = new AdminMenu();
+//
+//                        adminMenu.enterAdminDashboard();
+//                        break;
 
 
                 }
