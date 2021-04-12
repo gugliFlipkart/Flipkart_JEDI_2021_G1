@@ -27,6 +27,7 @@ public class StudentRestController {
         System.out.println("hit RegisterForSem service ===== ");
         return studentHandler.registerForSemester();
 //        return "Hello world!";
+//        return Response.status(201).entity( notification ).build();
 
     }
 
