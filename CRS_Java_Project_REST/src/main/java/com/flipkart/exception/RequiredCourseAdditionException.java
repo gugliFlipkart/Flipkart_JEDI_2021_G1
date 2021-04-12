@@ -5,7 +5,7 @@ public class RequiredCourseAdditionException extends Exception {
 
     public String getMessage(){
 
-        return "Add 4 primary and 2 alternate courses ";
+        return "you have already Added 4 primary and 2 alternate courses ";
 
     }
 
