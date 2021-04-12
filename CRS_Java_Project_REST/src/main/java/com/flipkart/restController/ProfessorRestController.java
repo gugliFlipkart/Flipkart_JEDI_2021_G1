@@ -2,6 +2,7 @@ package com.flipkart.restController;
 
 import com.flipkart.bean.Grade;
 import com.flipkart.bean.Student;
+import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.handler.ProfessorHandler;
 
 import javax.ws.rs.*;
@@ -27,12 +28,16 @@ public class ProfessorRestController {
 
     }
 
-    @GET
-    @Path("/viewstudents")
+    @POST
+    @Path("/viewstudents/{courseId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response viewStudents(@QueryParam("courseId") String courseId){
+    public Response viewStudents(@PathParam("courseId") String courseId) throws CourseNotFoundException {
         List<Student> courseStudentList = professorHandler.ViewStudents(courseId);
+        if(courseStudentList.size() == 0)
+            throw new CourseNotFoundException(courseId);
         return Response.status(201).entity( courseStudentList ).build();
+        //if courseStudentlist size = 0 raise exception
+
 
     }
 
