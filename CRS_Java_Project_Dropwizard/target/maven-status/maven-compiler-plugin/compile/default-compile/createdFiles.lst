@@ -21,6 +21,7 @@ com/flipkart/service/AdminServiceInterface.class
 com/flipkart/exception/IncorrentCredentialException.class
 com/flipkart/service/StudentService.class
 com/flipkart/exception/CourseAlreadyPresentInCatalogueException.class
+com/flipkart/constant/GradeEnum.class
 com/flipkart/clientMenu/StudentMenu.class
 com/flipkart/bean/Grade.class
 com/flipkart/restController/ProfessorRestController.class
