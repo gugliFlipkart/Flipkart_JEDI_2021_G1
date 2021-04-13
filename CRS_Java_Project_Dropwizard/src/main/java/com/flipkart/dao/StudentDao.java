@@ -293,6 +293,12 @@ public class StudentDao implements StudentDaoInterface {
 
     }
 
+    /**
+     *
+     * @param studentId
+     * @param password
+     * @throws SQLException
+     */
     public void studentRegistration(String studentId, String password) throws SQLException {
 
         try {

@@ -11,6 +11,15 @@ public class NotificationService implements NotificationInterface {
 
     NotificationDaoInterface notificationDaoInterface = new NotificationDao();
 
+    /**
+     *
+     * @param studentId
+     * @param message
+     * @param amount
+     * @return
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     @Override
     public Notification sendNotification(String studentId, String message, double amount) throws ClassNotFoundException, SQLException {
         UUID uuid = UUID.randomUUID();

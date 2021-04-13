@@ -25,19 +25,26 @@ public class StudentRestController {
     StudentHandler studentHandler = new StudentHandler();
     PaymentHandler paymentHandler = new PaymentHandler();
 
+    /**
+     * returns the list of courses
+     *
+     */
     @GET
     @Path("/registerForSemester")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Course> registerForSemester() {
         System.out.println("hit RegisterForSem service ===== ");
         return studentHandler.registerForSemester();
-//        return "Hello world!";
-//        return Response.status(201).entity( notification ).build();
 
     }
 
 
-
+    /**
+     *
+     * @param studentId
+     * @param courseIdAdd
+     * @return
+     */
     @POST
     @Path("/addCourse/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -59,7 +66,12 @@ public class StudentRestController {
     }
 
 
-
+    /**
+     *
+     * @param studentId
+     * @param courseIdDrop
+     * @return
+     */
     @POST
     @Path("/dropCourse/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -78,7 +90,12 @@ public class StudentRestController {
     }
 
 
-
+    /**
+     *
+     * @param studentId
+     * @param mode
+     * @return
+     */
     @POST
     @Path("/payFee/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -97,7 +114,11 @@ public class StudentRestController {
     }
 
 
-
+    /**
+     *
+     * @param studentId
+     * @return
+     */
     @POST
     @Path("/viewGradeCard/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -106,8 +127,6 @@ public class StudentRestController {
 
         List<Grade> studentGradeList = studentHandler.viewReportCard(studentId);
         return Response.status(201).entity( studentGradeList).build();
-
-
 
     }
 

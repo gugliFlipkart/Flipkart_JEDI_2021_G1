@@ -17,9 +17,33 @@ import java.util.List;
 public interface AdminServiceInterface {
 
 
-   // public List<Student> viewApprovalPendingregistration();
+    /**
+     * approve Student
+     */
     public void approveStudentRegistration();
+
+    /**
+     *
+     * @param course
+     * @throws CourseAlreadyPresentInCatalogueException
+     * @throws SQLException
+     */
     public void addCourses(Course course) throws CourseAlreadyPresentInCatalogueException, SQLException;
+
+    /**
+     *
+     * @param courseId
+     * @throws CourseNotFoundException
+     * @throws SQLException
+     */
     public void dropCourses(String courseId) throws CourseNotFoundException, SQLException;
+
+    /**
+     *
+     * @param studentId
+     * @return
+     * @throws StudentIDNotValidException
+     * @throws SQLException
+     */
     public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException;
 }

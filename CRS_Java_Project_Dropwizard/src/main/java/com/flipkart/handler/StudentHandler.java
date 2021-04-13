@@ -23,7 +23,10 @@ public class StudentHandler {
 
     StudentInterface studentServiceInterface = StudentService.getInstance();
 
-
+    /**
+     *
+     * @return list of courses
+     */
     public List<Course> registerForSemester(){
 
         return studentServiceInterface.registerForSemester();
@@ -31,15 +34,36 @@ public class StudentHandler {
 
     }
 
+    /**
+     *
+     * @param studentid
+     * @param courseId
+     * @throws CourseAlreadyRegisteredException
+     * @throws RequiredCourseAdditionException
+     * @throws CourseCapacityReached
+     */
     public void addCourse(String studentid, String courseId) throws CourseAlreadyRegisteredException, RequiredCourseAdditionException, CourseCapacityReached {
         studentServiceInterface.addCourse(studentid,courseId);
 
     }
+
+    /**
+     *
+     * @param studentId
+     * @param courseId
+     * @throws CourseNotFoundException
+     */
     public void dropCourse(String studentId, String courseId) throws CourseNotFoundException {
         studentServiceInterface.dropCourse(studentId,courseId);
     }
 
 
+    /**
+     *
+     * @param student
+     * @param mode
+     * @return
+     */
     public boolean payFee(Student student, int mode){
         studentServiceInterface.payFee(student, mode);
 
@@ -47,17 +71,25 @@ public class StudentHandler {
     }
 
 
-
+    /**
+     *
+     * @param studentId
+     * @return
+     */
     public List<Grade> viewReportCard(String studentId){
 
         return studentServiceInterface.viewReportCard(studentId);
-//        return null;
     }
 
+    /**
+     *
+     * @param studentId
+     * @param password
+     * @throws SQLException
+     */
     public void studentRegistration(String studentId, String password) throws SQLException {
 
         studentServiceInterface.studentRegistration(studentId, password);
-
 
     }
 
