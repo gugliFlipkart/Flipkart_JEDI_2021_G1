@@ -9,6 +9,12 @@ public class RegistrationSevice implements RegistrationInterface {
 
     RegistrationDaoInterface registrationDaoInterface = new RegistrationDaoService();
 
+    /**
+     *
+     * @param studentId
+     * @return
+     * @throws SQLException
+     */
     @Override
     public double calculateFee(String studentId) throws SQLException {
         return registrationDaoInterface.calculateFee(studentId);

@@ -17,17 +17,34 @@ public class ProfessorHandler {
 
     ProfessorInterface professorService = ProfessorService.getInstance();
 
+    /**
+     *
+     * @param professorId
+     * @param courseId
+     * @throws ProfessorAlreadyAssignedException
+     */
     public void addCoursesToTeach(String professorId, String courseId) throws ProfessorAlreadyAssignedException {
 
         professorService.addCoursesToTeach(professorId, courseId);
     }
 
 
+    /**
+     *
+     * @param grade
+     * @throws SQLException
+     */
     public void addGrades(Grade grade) throws SQLException {
         professorService.addGrades(grade);
     }
 
 
+    /**
+     *
+     * @param courseId
+     * @return
+     * @throws SQLException
+     */
     public List<Student> ViewStudents(String courseId) throws SQLException {
 
         return  professorService.viewEnrolledStudent(courseId);

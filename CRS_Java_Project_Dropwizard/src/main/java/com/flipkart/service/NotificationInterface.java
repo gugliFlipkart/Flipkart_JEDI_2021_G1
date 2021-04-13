@@ -8,6 +8,15 @@ import java.util.UUID;
 
 public interface NotificationInterface {
 
+    /**
+     *
+     * @param studentId
+     * @param message
+     * @param amount
+     * @return
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     public Notification sendNotification(String studentId, String message, double amount) throws ClassNotFoundException, SQLException;
 
 }

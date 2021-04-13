@@ -18,7 +18,12 @@ public class ProfessorRestController {
 
     ProfessorHandler professorHandler = new ProfessorHandler();
 
-
+    /**
+     *
+     * @param professorId
+     * @param courseId
+     * @return
+     */
     @POST
     @Path("/addcourse/{professorId}")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -34,6 +39,11 @@ public class ProfessorRestController {
 
     }
 
+    /**
+     *
+     * @param courseId
+     * @return
+     */
     @POST
     @Path("/viewstudents/{courseId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -51,6 +61,11 @@ public class ProfessorRestController {
 
     }
 
+    /**
+     *
+     * @param grade
+     * @return
+     */
     @POST
     @Path("/addgrades")
     @Consumes(MediaType.APPLICATION_JSON)

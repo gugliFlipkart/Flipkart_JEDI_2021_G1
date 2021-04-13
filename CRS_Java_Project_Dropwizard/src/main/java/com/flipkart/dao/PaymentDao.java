@@ -22,6 +22,14 @@ public class PaymentDao implements PaymentDaoInterface {
 
     Connection conn;
 
+    /**
+     *
+     * @param studentId
+     * @param modeOfPayment
+     * @param amt
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     @Override
     public void make_payment(String studentId, String modeOfPayment, double amt) throws ClassNotFoundException, SQLException {
         //conn = DBUtils.getConnection();

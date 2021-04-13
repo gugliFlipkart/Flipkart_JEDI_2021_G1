@@ -50,6 +50,7 @@ public class PaymentService implements PaymentInterface {
 
             //ModeOfPayment mode = ModeOfPayment.getModeofPayment(sc.nextInt());
 
+
             // Make Payment
             try {
                 paymentDao.make_payment(studentId, mode, fee);
