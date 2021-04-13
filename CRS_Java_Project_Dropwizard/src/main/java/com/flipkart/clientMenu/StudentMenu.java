@@ -13,6 +13,7 @@ import com.flipkart.handler.StudentHandler;
 import com.flipkart.service.ProfessorService;
 import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -77,7 +78,13 @@ public class StudentMenu {
 
 //                    PaymentHandler paymentHandler = new PaymentHandler();
                     PaymentHandler paymentHandler = new PaymentHandler();
-//                    paymentHandler.make_payment(studentId, "netbanking");
+                    try {
+                        paymentHandler.make_payment(studentId, "netbanking");
+                    } catch (SQLException throwables) {
+                        throwables.printStackTrace();
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                    }
 
                     break;
 
