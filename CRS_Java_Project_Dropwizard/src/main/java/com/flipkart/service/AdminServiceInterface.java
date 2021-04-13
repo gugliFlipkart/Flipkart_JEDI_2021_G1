@@ -18,24 +18,28 @@ public interface AdminServiceInterface {
 
 
     /**
-     * approve Student
+     * Method used by admin to approve student registration
      */
     public void approveStudentRegistration();
 
-    /**
-     *
-     * @param course
-     * @throws CourseAlreadyPresentInCatalogueException
-     * @throws SQLException
-     */
+
+/**
+ * Method used by admin to add course in the course catalogue
+ * @param course
+ * @throws CourseAlreadyPresentInCatalogueException
+ * @throws SQLException
+ */
+
     public void addCourses(Course course) throws CourseAlreadyPresentInCatalogueException, SQLException;
 
-    /**
-     *
-     * @param courseId
-     * @throws CourseNotFoundException
-     * @throws SQLException
-     */
+
+
+/**
+ * Method used by admin to delete a course from course catalogue
+ * @param courseId
+ * @throws CourseNotFoundException
+ * @throws SQLException
+ */
     public void dropCourses(String courseId) throws CourseNotFoundException, SQLException;
 
     /**

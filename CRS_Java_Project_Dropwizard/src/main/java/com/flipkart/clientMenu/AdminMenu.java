@@ -28,7 +28,11 @@ public class AdminMenu {
 
 
     /**
+<<<<<<< HEAD
+     * Method used to display the admin menu
+=======
      * Method used to display admin menu
+>>>>>>> 398899baaf948dbbcab22f9dee8087e0a4cf8d56
      */
 
     public void enterAdminDashboard() throws StudentIDNotValidException, SQLException, CourseAlreadyPresentInCatalogueException, CourseNotFoundException {
