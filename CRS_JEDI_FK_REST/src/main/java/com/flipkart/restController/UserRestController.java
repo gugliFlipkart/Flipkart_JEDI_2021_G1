@@ -14,14 +14,18 @@ import java.sql.SQLException;
 @Path("/user")
 public class UserRestController {
 
+    /**
+     *
+     * @param user
+     * @return
+     */
     @POST
     @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response login(User user) {
         System.out.println("hit Login service ===== ");
-//        return studentHandler.registerForSemester();
-//        return "Hello world!";
+
         AuthenticationHandler authenticationHandler = new AuthenticationHandler();
 
         String userType = authenticationHandler.callAuthService(user.getUsername(), user.getPassword()) ;
@@ -33,13 +37,16 @@ public class UserRestController {
     }
 
 
+    /**
+     *
+     * @param user
+     * @return
+     */
     @POST
     @Path("/studentRegistration")
     @Produces(MediaType.APPLICATION_JSON)
     public Response studentRegistration(User user) {
         System.out.println("hit RegisterForSem service ===== ");
-//        return studentHandler.registerForSemester();
-//        return "Hello world!";
         StudentHandler studentHandler = new StudentHandler();
         try {
             studentHandler.studentRegistration(user.getUsername(), user.getPassword());

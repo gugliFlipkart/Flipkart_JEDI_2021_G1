@@ -50,7 +50,7 @@ public class ProfessorDao implements ProfessorDaoInterface{
      * @param professorId
      * @param courseId
      */
-    public void addCoursesToTeach(String professorId,String courseId) {
+    public void addCoursesToTeach(String professorId,String courseId) throws ProfessorAlreadyAssignedException {
 //        professorDao
 
         int courseAlreadyAssigned = 0; // if >10 display msg
@@ -62,6 +62,7 @@ public class ProfessorDao implements ProfessorDaoInterface{
             System.out.println("Creating statement...");
 
             stmt = conn.prepareStatement(SqlQueries.CHECK_PROF_ALLOTTED); // courseAlreadyAssigned
+
             stmt.setString(1,courseId);
             rs = stmt.executeQuery();
 //            logger.info("course added succesfully....");
@@ -82,6 +83,8 @@ public class ProfessorDao implements ProfessorDaoInterface{
                     stmt = conn.prepareStatement(SqlQueries.ADD_COURSE_TO_TEACH_PROFESSOR);
                     stmt.setString(2,professorId);
                     stmt.setString(1,courseId);
+                    stmt.setString(3,"CRS-Project");
+                    stmt.setString(4, String.valueOf(100));
 
 
                     System.out.println(stmt.executeUpdate());
@@ -101,7 +104,7 @@ public class ProfessorDao implements ProfessorDaoInterface{
         }  catch (SQLException throwables) {
             throwables.printStackTrace();
         } catch (ProfessorAlreadyAssignedException e) {
-            e.printStackTrace();
+            throw e;
         }catch (Exception e){
             System.out.println("got exception ========"+e.getMessage());
         }
@@ -115,9 +118,10 @@ public class ProfessorDao implements ProfessorDaoInterface{
      * @param courseId
      * @return
      */
-    public List<Student> fetchEnrolledStudent(String courseId) {
+    public List<Student> fetchEnrolledStudent(String courseId) throws SQLException {
 
         List<Student> studentList = new ArrayList<>();
+//        conn.close();
 
         try {
             ResultSet rs = null;
@@ -145,12 +149,12 @@ public class ProfessorDao implements ProfessorDaoInterface{
 
 
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            throw throwables;
         }
 
 
-        System.out.println("reached dao");
-        return null;
+//        System.out.println("reached dao");
+//        return null;
 
     }
 
@@ -159,12 +163,13 @@ public class ProfessorDao implements ProfessorDaoInterface{
      * @param grade
      */
 
-    public void addGrades(Grade grade){
+    public void addGrades(Grade grade) throws SQLException {
 
+//        conn.close();
         try {
             ResultSet rs = null;
             System.out.println("Creating statement...");
-            stmt = conn.prepareStatement(SqlQueries.ADD_GRADE); // courseAlreadyAssigned
+            stmt = conn.prepareStatement(SqlQueries.ADD_GRADE);
             stmt.setString(1, grade.getGradeObtained());
             stmt.setString(2, grade.getCourseId());
             stmt.setString(3, grade.getStudentId());
@@ -173,10 +178,10 @@ public class ProfessorDao implements ProfessorDaoInterface{
 
 
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            throw throwables;
         }
 
-        System.out.println("reached dao");
+        System.out.println("reached dao in addgrades");
 
 
     }

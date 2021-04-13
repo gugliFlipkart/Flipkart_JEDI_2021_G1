@@ -8,6 +8,12 @@ import com.flipkart.bean.Student;
 
 public interface AuthenticationServiceInterface {
 
+    /**
+     *
+     * @param userId
+     * @param password
+     * @return
+     */
     public String validateCredentials(String userId, String password);
 
 }

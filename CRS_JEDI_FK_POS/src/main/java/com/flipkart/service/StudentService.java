@@ -9,9 +9,9 @@ import com.flipkart.exception.CourseAlreadyRegisteredException;
 import com.flipkart.exception.CourseCapacityReached;
 import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
-import com.flipkart.handler.StudentHandler;
-import com.sun.tools.javac.util.Pair;
 
+
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -34,53 +34,79 @@ public class StudentService implements StudentInterface {
 
     StudentDaoInterface studentDaoInterface = StudentDao.getInstance();
 
+    /**
+     *
+     * @return course list
+     */
     public List<Course> registerForSemester(){
-
-        //fetch course list
 
         return studentDaoInterface.registerForSemester();
     }
 
 
-
-
+    /**
+     *
+     * @param studentId
+     * @param courseId
+     * @throws CourseAlreadyRegisteredException
+     * @throws RequiredCourseAdditionException
+     * @throws CourseCapacityReached
+     */
     public void addCourse(String studentId, String courseId) throws CourseAlreadyRegisteredException, RequiredCourseAdditionException, CourseCapacityReached {
 
         studentDaoInterface.addCourse(studentId,courseId);
 
     }
 
-
+    /**
+     *
+     * @param studentId
+     * @param courseId
+     * @throws CourseNotFoundException
+     */
     public void dropCourse(String studentId, String courseId) throws CourseNotFoundException {
         studentDaoInterface.dropCourse(studentId,courseId);
 
     }
 
 
-    public Pair<Boolean, List<String>> registerCourses(Student student){
-
-        return  null;
-    }
-
-
+    /**
+     *
+     * @param student
+     * @param mode
+     * @return
+     */
     public boolean payFee(Student student, int mode){
+
         // if all course resgistration successfull than only can this fn be called
         //calls bankApi to do payment and get payment status
         boolean status = true;// dummy
 
-        // this status is sent to atudentdao.payfeeStatusUpdate
+        // this status is sent to studentdao.payfeeStatusUpdate
         // this updates db payment status
 
         return status;
 
     }
+
+    /**
+     *
+     * @param studentId
+     * @return
+     */
     public List<Grade> viewReportCard(String studentId){
         return studentDaoInterface.viewReportCard(studentId);
 
     }
 
 
-    public void studentRegistration(String studenntId, String password){
+    /**
+     *
+     * @param studenntId
+     * @param password
+     * @throws SQLException
+     */
+    public void studentRegistration(String studenntId, String password) throws SQLException {
 
         studentDaoInterface.studentRegistration(studenntId, password);
 

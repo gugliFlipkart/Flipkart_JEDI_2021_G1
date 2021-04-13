@@ -10,6 +10,12 @@ import com.flipkart.service.AuthenticationServiceInterface;
 
 public class AuthenticationHandler {
 
+    /**
+     *
+     * @param userId
+     * @param password
+     * @return
+     */
     public String callAuthService(String userId, String password){
         AuthenticationServiceInterface authenticationServiceInterface  = new AuthenticationService();
         return authenticationServiceInterface.validateCredentials(userId, password);

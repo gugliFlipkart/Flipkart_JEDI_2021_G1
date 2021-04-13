@@ -18,7 +18,7 @@ public class AdminService implements AdminServiceInterface {
 
 
     /**
-     * singleton
+     * singleton class
      */
     private static volatile AdminService instance = null;
     public static AdminService getInstance() {
@@ -30,36 +30,50 @@ public class AdminService implements AdminServiceInterface {
         return instance;
     }
 
-
-
     AdminDaoInterface adminDaoInterface = AdminDao.getInstance();
 
 
-
-
-
-
-
+    /**
+     * Method used by admin to approve student registration
+     */
     @Override
     public void approveStudentRegistration() {
         adminDaoInterface.approveStudentRegistration();
-
-
     }
+
+    /**
+     * Method used by admin to add course in the course catalogue
+    /**
+     *
+     * @param course
+     * @throws CourseAlreadyPresentInCatalogueException
+     * @throws SQLException
+     */
 
     @Override
     public void addCourses (Course course) throws CourseAlreadyPresentInCatalogueException, SQLException {
         adminDaoInterface.addCourses(course);
-
-
     }
 
+
+    /**
+     * @param courseId
+     * @throws CourseNotFoundException
+     * @throws SQLException
+     */
 
     @Override
     public void dropCourses(String courseId) throws CourseNotFoundException, SQLException {
          adminDaoInterface.dropCourses(courseId);
     }
 
+    /**
+     *
+     * @param studentId
+     * @return
+     * @throws StudentIDNotValidException
+     * @throws SQLException
+     */
     @Override
     public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException {
         return adminDaoInterface.generateReportCard(studentId);
