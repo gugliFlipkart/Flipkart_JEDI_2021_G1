@@ -11,6 +11,7 @@ import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
 
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -79,7 +80,7 @@ public class StudentService implements StudentInterface {
     }
 
 
-    public void studentRegistration(String studenntId, String password){
+    public void studentRegistration(String studenntId, String password) throws SQLException {
 
         studentDaoInterface.studentRegistration(studenntId, password);
 

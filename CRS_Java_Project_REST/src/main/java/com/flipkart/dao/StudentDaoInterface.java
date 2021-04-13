@@ -7,6 +7,7 @@ import com.flipkart.exception.CourseCapacityReached;
 import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.RequiredCourseAdditionException;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface StudentDaoInterface {
@@ -21,7 +22,7 @@ public interface StudentDaoInterface {
     public boolean addCourse(String studentId, String courseId) throws RequiredCourseAdditionException, CourseCapacityReached, CourseAlreadyRegisteredException;
     public boolean dropCourse(String studentId, String courseId) throws CourseNotFoundException;
     public List<Grade> viewReportCard(String student);
-    public void studentRegistration(String studentId, String password);
+    public void studentRegistration(String studentId, String password) throws SQLException;
 
 
 }

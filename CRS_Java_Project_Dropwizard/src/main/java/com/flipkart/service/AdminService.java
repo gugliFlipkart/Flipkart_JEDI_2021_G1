@@ -30,23 +30,21 @@ public class AdminService implements AdminServiceInterface {
         return instance;
     }
 
-
-
     AdminDaoInterface adminDaoInterface = AdminDao.getInstance();
 
 
     /**
      * Method used by admin to approve student registration
      */
-
     @Override
     public void approveStudentRegistration() {
         adminDaoInterface.approveStudentRegistration();
-
     }
 
     /**
      * Method used by admin to add course in the course catalogue
+    /**
+     *
      * @param course
      * @throws CourseAlreadyPresentInCatalogueException
      * @throws SQLException
@@ -55,13 +53,10 @@ public class AdminService implements AdminServiceInterface {
     @Override
     public void addCourses (Course course) throws CourseAlreadyPresentInCatalogueException, SQLException {
         adminDaoInterface.addCourses(course);
-
-
     }
 
 
     /**
-     * Method used by admin to delete a course from course catalogue
      * @param courseId
      * @throws CourseNotFoundException
      * @throws SQLException
@@ -73,13 +68,12 @@ public class AdminService implements AdminServiceInterface {
     }
 
     /**
-     * Method used by admin to generate the given Student's report card
+     *
      * @param studentId
      * @return
      * @throws StudentIDNotValidException
      * @throws SQLException
      */
-
     @Override
     public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException {
         return adminDaoInterface.generateReportCard(studentId);

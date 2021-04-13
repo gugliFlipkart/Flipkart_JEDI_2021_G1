@@ -33,12 +33,14 @@ public class AdminHandler {
 
 
 
+
 /**
  * Method used by admin to add course in the course catalogue
  * @param course
  * @throws CourseAlreadyPresentInCatalogueException
  * @throws SQLException
  */
+
 
 
     public void addCourses(Course course) throws CourseAlreadyPresentInCatalogueException, SQLException {
@@ -51,7 +53,6 @@ public class AdminHandler {
  * @throws CourseNotFoundException
  * @throws SQLException
  */
-
 
      public void dropCourses(String courseId) throws CourseNotFoundException, SQLException {
         adminService.dropCourses(courseId);

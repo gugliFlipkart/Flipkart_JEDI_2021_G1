@@ -11,11 +11,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Interface for Admin Service
+ * Ibterface for Admin Service
  */
 
 public interface AdminServiceInterface {
-
 
 
     /**
@@ -41,18 +40,14 @@ public interface AdminServiceInterface {
  * @throws CourseNotFoundException
  * @throws SQLException
  */
-
-
     public void dropCourses(String courseId) throws CourseNotFoundException, SQLException;
 
     /**
-     * Method used by admin to generate the given Student's report card
+     *
      * @param studentId
      * @return
      * @throws StudentIDNotValidException
      * @throws SQLException
      */
-
-
     public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException;
 }
