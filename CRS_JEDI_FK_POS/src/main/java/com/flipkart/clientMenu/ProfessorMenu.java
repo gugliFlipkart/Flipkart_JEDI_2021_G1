@@ -2,10 +2,12 @@ package com.flipkart.clientMenu;
 
 import com.flipkart.bean.Grade;
 import com.flipkart.bean.Student;
+import com.flipkart.exception.ProfessorAlreadyAssignedException;
 import com.flipkart.handler.ProfessorHandler;
 import com.flipkart.service.ProfessorService;
 import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -30,7 +32,7 @@ public class ProfessorMenu {
      *
      * @param professorId
      */
-    public void enterProfessorDashboard(String professorId){
+    public void enterProfessorDashboard(String professorId) throws ProfessorAlreadyAssignedException {
 
         logger.info(" ");
         logger.info("*********************************    Successfully logged in      *********************************");
@@ -63,7 +65,12 @@ public class ProfessorMenu {
                     logger.info("Enter Course ID to see enrolled Student");
 
                     String courseIdd = scanner.next();
-                    List<Student> courseStudentList = professorHandler.ViewStudents(courseIdd);
+                    List<Student> courseStudentList = null;
+                    try {
+                        courseStudentList = professorHandler.ViewStudents(courseIdd);
+                    } catch (SQLException throwables) {
+                        throwables.printStackTrace();
+                    }
 
                     for(Student student:courseStudentList)
                         System.out.println(student.toString());
@@ -83,7 +90,11 @@ public class ProfessorMenu {
                     System.out.println("enter gradeObtained");
                     grade.setGradeObtained(scanner.next());
 
-                    professorHandler.addGrades(grade);
+                    try {
+                        professorHandler.addGrades(grade);
+                    } catch (SQLException throwables) {
+                        throwables.printStackTrace();
+                    }
                     break;
                 case 9:// logout
                     flag = 1;

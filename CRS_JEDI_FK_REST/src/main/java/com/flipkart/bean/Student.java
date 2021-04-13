@@ -1,14 +1,14 @@
 package com.flipkart.bean;
 
-public class Student extends User{
+public class Student {
 
 
     private String studentName;
     private String department;
-    private int rollNo;
+//    private int rollNo;
     private String studentId;
 
-    private int yearOfAdmission;
+//    private int yearOfAdmission;
 
 //    public Student(String studentName, String department, int rollNo, int yearOfAdmission, String studentId) {
 //        this.studentName = studentName;
@@ -45,22 +45,22 @@ public class Student extends User{
     public void setDepartment(String department) {
         this.department = department;
     }
+//
+//    public int getRollNo() {
+//        return rollNo;
+//    }
+//
+//    public void setRollNo(int rollNo) {
+//        this.rollNo = rollNo;
+//    }
 
-    public int getRollNo() {
-        return rollNo;
-    }
-
-    public void setRollNo(int rollNo) {
-        this.rollNo = rollNo;
-    }
-
-    public int getYearOfAdmission() {
-        return yearOfAdmission;
-    }
-
-    public void setYearOfAdmission(int yearOfAdmission) {
-        this.yearOfAdmission = yearOfAdmission;
-    }
+//    public int getYearOfAdmission() {
+//        return yearOfAdmission;
+//    }
+//
+//    public void setYearOfAdmission(int yearOfAdmission) {
+//        this.yearOfAdmission = yearOfAdmission;
+//    }
     public String getStudentId() {
         return studentId;
     }

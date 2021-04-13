@@ -4,12 +4,16 @@ package com.flipkart.clientMenu;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Grade;
 import com.flipkart.bean.Student;
+import com.flipkart.exception.CourseAlreadyPresentInCatalogueException;
+import com.flipkart.exception.CourseNotFoundException;
+import com.flipkart.exception.StudentIDNotValidException;
 import com.flipkart.handler.AdminHandler;
 import com.flipkart.handler.ProfessorHandler;
 import com.flipkart.service.AdminService;
 import com.flipkart.service.ProfessorService;
 import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -24,10 +28,14 @@ public class AdminMenu {
 
 
     /**
+<<<<<<< HEAD
+     * Method used to display the admin menu
+=======
      * Method used to display admin menu
+>>>>>>> 398899baaf948dbbcab22f9dee8087e0a4cf8d56
      */
 
-    public void enterAdminDashboard() {
+    public void enterAdminDashboard() throws StudentIDNotValidException, SQLException, CourseAlreadyPresentInCatalogueException, CourseNotFoundException {
 
 
         int flag = 0;
@@ -100,7 +108,7 @@ public class AdminMenu {
             }
         }
 
-    }
+   }
 }
 
 

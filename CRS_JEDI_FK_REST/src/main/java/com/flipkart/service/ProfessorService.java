@@ -27,12 +27,14 @@ public class ProfessorService implements ProfessorInterface {
         return instance;
     }
 
-//    DummyGradesDB dummyGradesDB =  DummyGradesDB.getInstance();
-//    DummyCourseCatalogueDB dummyCourseCatalogueDB =  DummyCourseCatalogueDB.getInstance();
-
     ProfessorDaoInterface professorDaoInterface =  ProfessorDao.getInstance();
 
 
+    /**
+     *
+     * @param grade
+     * @throws SQLException
+     */
     @Override
     public void addGrades(Grade grade) throws SQLException {
         professorDaoInterface.addGrades(grade);
@@ -40,6 +42,12 @@ public class ProfessorService implements ProfessorInterface {
 
     }
 
+    /**
+     *
+     * @param courseId
+     * @return
+     * @throws SQLException
+     */
     @Override
     public List<Student> viewEnrolledStudent(String courseId) throws SQLException {
         return  professorDaoInterface.fetchEnrolledStudent(courseId);
@@ -47,6 +55,12 @@ public class ProfessorService implements ProfessorInterface {
 
     }
 
+    /**
+     *
+     * @param professorId
+     * @param courseId
+     * @throws ProfessorAlreadyAssignedException
+     */
     @Override
     public void addCoursesToTeach(String professorId, String courseId) throws ProfessorAlreadyAssignedException {
         professorDaoInterface.addCoursesToTeach(professorId,courseId);

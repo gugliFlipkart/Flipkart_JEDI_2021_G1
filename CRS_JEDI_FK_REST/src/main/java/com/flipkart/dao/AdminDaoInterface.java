@@ -16,10 +16,46 @@ public interface AdminDaoInterface {
      * Interface for Admin Dao
      *
      */
-    //public List<Student> viewApprovalPendingRegistration();
+
+
+
+    /**
+     * Method used by admin to approve student registration
+     */
+
     public void approveStudentRegistration();
+
+
+  /**
+   * Method used by admin to add course in the course catalogue
+   * @param course
+   * @throws CourseAlreadyPresentInCatalogueException
+   * @throws SQLException
+   */
+
+
     public void addCourses(Course course) throws CourseAlreadyPresentInCatalogueException, SQLException;
+
+
+    /**
+ * Method used by admin to delete a course from course catalogue
+ * @param courseId
+ * @throws CourseNotFoundException
+ * @throws SQLException
+ */
     public void dropCourses(String courseId) throws CourseNotFoundException, SQLException;
+
+
+
+
+    /**
+     *
+     * @param studentId
+     * @return
+     * @throws StudentIDNotValidException
+     * @throws SQLException
+     */
+
     public List<Grade> generateReportCard(String studentId) throws StudentIDNotValidException, SQLException;
 
 }

@@ -22,8 +22,16 @@ public class PaymentDao implements PaymentDaoInterface {
 
     Connection conn;
 
+    /**
+     *
+     * @param studentId
+     * @param modeOfPayment
+     * @param amt
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     @Override
-    public void make_payment(String studentId, ModeOfPayment modeOfPayment, double amt) throws ClassNotFoundException, SQLException {
+    public void make_payment(String studentId, String modeOfPayment, double amt) throws ClassNotFoundException, SQLException {
         //conn = DBUtils.getConnection();
         Class.forName("com.mysql.jdbc.Driver");
         conn = DriverManager.getConnection(DB_URL,USER,PASS);
@@ -33,7 +41,7 @@ public class PaymentDao implements PaymentDaoInterface {
             System.out.println("Creating statement...");
             stmt = conn.prepareStatement(SqlQueries.INSERT_PAYMENT);
             stmt.setString(1,studentId);
-            stmt.setString(2,modeOfPayment.toString());
+            stmt.setString(2,modeOfPayment);
             stmt.setDouble(3,amt);
 
 

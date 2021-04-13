@@ -11,7 +11,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class RegistrationDaoService implements RegistrationDaoInterface{
+
     private static Logger logger = Logger.getLogger(CRSApplication.class);
+
+    /**
+     *
+     * @param studentId
+     * @return
+     * @throws SQLException
+     */
     @Override
     public double calculateFee(String studentId) throws SQLException {
         Connection conn = DBUtils.getConnection();
@@ -34,12 +42,7 @@ public class RegistrationDaoService implements RegistrationDaoInterface{
         {
             logger.info(e.getMessage());
         }
-        finally
-        {
-            stmt.close();
-            conn.close();
-        }
-        //todo @sahil why close connection janb khi nhi kiya hai ye???
+
 
         return fee;
     }

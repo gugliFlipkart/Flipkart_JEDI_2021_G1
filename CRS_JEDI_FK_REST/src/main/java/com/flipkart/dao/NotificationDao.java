@@ -23,6 +23,15 @@ public class NotificationDao implements NotificationDaoInterface {
 
     Connection conn;
 
+    /**
+     *
+     * @param transactionId
+     * @param studentId
+     * @param message
+     * @param amount
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     @Override
     public void sendNotification(String transactionId, String studentId, String message, double amount) throws ClassNotFoundException,SQLException {
 //        conn = DBUtils.getConnection();

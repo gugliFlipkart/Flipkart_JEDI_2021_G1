@@ -10,18 +10,52 @@ import com.flipkart.exception.RequiredCourseAdditionException;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Interface for Student Dao
+ * @return
+ */
+
 public interface StudentDaoInterface {
 
     /**
-     * Interface for Student Dao
+     *
      * @return
      */
-
     public List<Course> registerForSemester();
-//    public Pair<Boolean, List<String>> registerCourses(Student student);
+
+    /**
+     *
+     * @param studentId
+     * @param courseId
+     * @return
+     * @throws RequiredCourseAdditionException
+     * @throws CourseCapacityReached
+     * @throws CourseAlreadyRegisteredException
+     */
     public boolean addCourse(String studentId, String courseId) throws RequiredCourseAdditionException, CourseCapacityReached, CourseAlreadyRegisteredException;
+
+    /**
+     *
+     * @param studentId
+     * @param courseId
+     * @return
+     * @throws CourseNotFoundException
+     */
     public boolean dropCourse(String studentId, String courseId) throws CourseNotFoundException;
+
+    /**
+     *
+     * @param student
+     * @return
+     */
     public List<Grade> viewReportCard(String student);
+
+    /**
+     *
+     * @param studentId
+     * @param password
+     * @throws SQLException
+     */
     public void studentRegistration(String studentId, String password) throws SQLException;
 
 

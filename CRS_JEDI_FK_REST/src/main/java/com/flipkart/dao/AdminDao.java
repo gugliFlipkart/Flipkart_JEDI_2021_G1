@@ -183,6 +183,7 @@ public class AdminDao implements AdminDaoInterface{
                         String gradeObtained = rs.getString("grade");
 
                         Grade grade = new Grade();
+                        grade.setStudentId(studentId);
                         grade.setCourseId(courseId);
                         grade.setCourseName(courseName);
                         grade.setGradeObtained(gradeObtained);

@@ -271,6 +271,7 @@ public class StudentDao implements StudentDaoInterface {
                 String gradeObtained = rs.getString("grade");
 
                 Grade grade = new Grade();
+                grade.setStudentId(studentId);
                 grade.setCourseId(courseId);
                 grade.setCourseName(courseName);
                 grade.setGradeObtained(gradeObtained);
@@ -292,6 +293,12 @@ public class StudentDao implements StudentDaoInterface {
 
     }
 
+    /**
+     *
+     * @param studentId
+     * @param password
+     * @throws SQLException
+     */
     public void studentRegistration(String studentId, String password) throws SQLException {
 
         try {

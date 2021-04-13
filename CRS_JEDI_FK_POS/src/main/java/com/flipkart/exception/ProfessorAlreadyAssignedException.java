@@ -11,6 +11,6 @@ public class ProfessorAlreadyAssignedException extends Exception{
 
     @Override
     public String getMessage() {
-        return "A professor has already been assigned to " + courseId;
+        return "A professor has already been assigned ";
     }
 }

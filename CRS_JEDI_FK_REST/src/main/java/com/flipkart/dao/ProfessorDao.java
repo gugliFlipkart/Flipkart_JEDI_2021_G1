@@ -62,6 +62,7 @@ public class ProfessorDao implements ProfessorDaoInterface{
             System.out.println("Creating statement...");
 
             stmt = conn.prepareStatement(SqlQueries.CHECK_PROF_ALLOTTED); // courseAlreadyAssigned
+
             stmt.setString(1,courseId);
             rs = stmt.executeQuery();
 //            logger.info("course added succesfully....");
@@ -82,6 +83,8 @@ public class ProfessorDao implements ProfessorDaoInterface{
                     stmt = conn.prepareStatement(SqlQueries.ADD_COURSE_TO_TEACH_PROFESSOR);
                     stmt.setString(2,professorId);
                     stmt.setString(1,courseId);
+                    stmt.setString(3,"CRS-Project");
+                    stmt.setString(4, String.valueOf(100));
 
 
                     System.out.println(stmt.executeUpdate());

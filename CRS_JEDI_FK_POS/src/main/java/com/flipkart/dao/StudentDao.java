@@ -202,7 +202,7 @@ public class StudentDao implements StudentDaoInterface {
             coursePresent = rs.getInt(1);
 
             if( coursePresent == 0) {
-
+                logger.info("course not found in dao");
                 throw new CourseNotFoundException(courseId);
 
             }
@@ -271,6 +271,7 @@ public class StudentDao implements StudentDaoInterface {
                 String gradeObtained = rs.getString("grade");
 
                 Grade grade = new Grade();
+                grade.setStudentId(studentId);
                 grade.setCourseId(courseId);
                 grade.setCourseName(courseName);
                 grade.setGradeObtained(gradeObtained);
@@ -292,7 +293,13 @@ public class StudentDao implements StudentDaoInterface {
 
     }
 
-    public void studentRegistration(String studentId, String password){
+    /**
+     *
+     * @param studentId
+     * @param password
+     * @throws SQLException
+     */
+    public void studentRegistration(String studentId, String password) throws SQLException {
 
         try {
 
@@ -310,7 +317,9 @@ public class StudentDao implements StudentDaoInterface {
 
 
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            logger.debug("db err");
+            throw throwables;
+
         }
 
 

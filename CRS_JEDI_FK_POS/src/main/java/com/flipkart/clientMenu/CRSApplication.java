@@ -1,17 +1,11 @@
 package com.flipkart.clientMenu;
 
-import com.flipkart.bean.Student;
-import com.flipkart.bean.User;
-import com.flipkart.constant.UserType;
-import com.flipkart.exception.CourseAlreadyRegisteredException;
-import com.flipkart.exception.CourseCapacityReached;
-import com.flipkart.exception.CourseNotFoundException;
-import com.flipkart.exception.RequiredCourseAdditionException;
+import com.flipkart.exception.*;
 import com.flipkart.handler.AuthenticationHandler;
 import com.flipkart.handler.StudentHandler;
-import jdk.internal.util.xml.impl.Pair;
 import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 
@@ -109,8 +103,15 @@ public class CRSApplication {
                     case "PROFESSOR":
 
                         ProfessorMenu professorMenu = new ProfessorMenu();
+                        /**
+                         *
+                         *
+                         *
+                         * professorMenu.enterProfessorDashboard(userId);
+                         *
+                         *
+                         */
 
-                        professorMenu.enterProfessorDashboard(userId);
 
                         break;
                     case "ADMIN":
@@ -138,6 +139,12 @@ public class CRSApplication {
             e.printStackTrace();
         } catch (CourseAlreadyRegisteredException e) {
             e.printStackTrace();
+        } catch (CourseAlreadyPresentInCatalogueException e) {
+            e.printStackTrace();
+        } catch (StudentIDNotValidException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
 
     }
@@ -156,8 +163,13 @@ public class CRSApplication {
         password = scanner.nextLine();
 
         StudentHandler studentHandler = new StudentHandler();
-        studentHandler.studentRegistration(userId,password);
+        try {
 
+
+            studentHandler.studentRegistration(userId, password);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
 
     }
@@ -182,6 +194,9 @@ public class CRSApplication {
 //        studentHandler.studentRegistration(userId,oldPassword,newPassword);
 
     }
+
+
+
 
 
 }

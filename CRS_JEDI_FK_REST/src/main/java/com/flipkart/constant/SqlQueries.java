@@ -29,7 +29,7 @@ public class SqlQueries {
     public static final String ADD_GRADE = "update studentGrade set grade=? where courseId=? and studentId=?";
     public static final String VIEW_ENROLLED_STUDENTS = "select student.Id, student.name, student.department from student inner join studentCourseRegistration on student.Id = studentCourseRegistration.studentId where studentCourseRegistration.courseId = ?";
     public static final String ADD_COURSE_TO_TEACH = "update course set professorId=? where courseId=?";
-    public static final String ADD_COURSE_TO_TEACH_PROFESSOR = "insert into course (courseId,profId,courseName,courseFee) values ( ? , ? , default , default )";
+    public static final String ADD_COURSE_TO_TEACH_PROFESSOR = "insert into course (courseId,profId,courseName,courseFee) values ( ? , ? , ? , ? )";
     public static final String CHECK_PROF_ALLOTTED = "select count(*) from course where courseId=?";
 
 
